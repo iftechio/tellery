@@ -2,7 +2,6 @@
   "version": "0.8.6",
   "scripts": {
     "dev": "vite",
-    "dev:beta": "DEV_PROXY_API=https://mosaic-beta.midway.run yarn dev",
     "build": "tsc && vite build",
     "analyze": "yarn build --mode analyze",
     "serve": "vite preview --port 3000",
