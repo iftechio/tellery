@@ -156,15 +156,6 @@ export const StoryConfigPopOver: ReactFCWithChildren<{
       {permissions.canWrite && (
         <>
           <MenuItem
-            icon={<IconCommonRefresh color={ThemingVariables.colors.text[0]} />}
-            title="Refresh on open"
-            onClick={(e) => {
-              e.preventDefault()
-              setStoryFormat('refreshOnOpen', !story?.format?.refreshOnOpen)
-            }}
-            side={<FormSwitch checked={!!story?.format?.refreshOnOpen} readOnly />}
-          />
-          <MenuItem
             icon={<IconCommonLock color={ThemingVariables.colors.text[0]} />}
             title="Lock"
             onClick={(e) => {
