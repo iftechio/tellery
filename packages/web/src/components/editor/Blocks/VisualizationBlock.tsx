@@ -629,7 +629,7 @@ const SnapshotUpdatedAt: ReactFCWithChildren<{
     setNowTimeStamp(Date.now())
   }, 1000)
 
-  const createdAt = snapshot?.createdAt ?? queryBlock.content?.lastRunAt
+  const createdAt = queryBlock.content?.lastRunAt ?? snapshot?.createdAt
 
   return (
     <>
