@@ -327,7 +327,7 @@ const taintCellByCodition = (data: TableData, condition: TableConfigFormatterCon
     const minMax: [number, number] = data.records.reduce(
       (a: [number, number], c) => {
         for (let i of columnIndexes) {
-          const value = parseFloat(c[i].value as any)
+          const value = parseFloat(c[i]?.value as string)
           if (isNaN(value)) {
             continue
           }
